@@ -1,18 +1,18 @@
-import type React from "react";
-import type { Metadata } from "next";
-import "./globals.css";
+import type React from "react"
+import type { Metadata } from "next"
+import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Workout Wizz - Your Personal AI Fitness Trainer",
   description:
     "Real-time form analysis using computer vision. Perfect your workout technique with instant feedback, designed specifically for students and fitness beginners.",
-  generator: "v0.app",
-};
+    generator: 'v0.app'
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -22,9 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-inter antialiased" suppressHydrationWarning>
-        {children}
-      </body>
+      <body className="font-inter antialiased">{children}</body>
     </html>
-  );
+  )
 }
