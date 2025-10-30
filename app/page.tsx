@@ -1,18 +1,20 @@
 "use client";
 
+import {
+  Zap,
+  Star,
+  Users,
+  Target,
+  Smartphone,
+  CheckCircle,
+} from "lucide-react";
+import { FC } from "react";
+// components
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  CheckCircle,
-  Smartphone,
-  Users,
-  Zap,
-  Target,
-  Star,
-} from "lucide-react";
 
-export default function WorkoutWizardLanding() {
+const WorkoutWizardLanding: FC = () => {
   const openDemoVideo = () => {
     window.open("https://www.ktvu.com/video/1413508", "_blank");
   };
@@ -22,64 +24,7 @@ export default function WorkoutWizardLanding() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* App Store Banner */}
-      <div className="bg-gradient-to-r from-blue-600 to-green-500 text-white text-center py-2 px-4">
-        <p className="text-sm font-medium">
-          Workout Wizz is coming soon to iOS and Android app stores!
-          <a
-            href="https://tally.so/r/mJWr7J"
-            className="underline ml-2 font-semibold"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join the waitlist
-          </a>
-        </p>
-      </div>
-
-      {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-green-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-slate-900 tracking-tight">
-                Workout Wizz
-              </span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="#features"
-                className="text-slate-600 hover:text-slate-900 transition-colors font-medium"
-              >
-                Features
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-slate-600 hover:text-slate-900 transition-colors font-medium"
-              >
-                How It Works
-              </a>
-              <a
-                href="#pricing"
-                className="text-slate-600 hover:text-slate-900 transition-colors font-medium"
-              >
-                Pricing
-              </a>
-              <Button
-                className="bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 font-semibold"
-                onClick={openWaitlist}
-              >
-                Get Started
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <>
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -549,91 +494,8 @@ export default function WorkoutWizardLanding() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-green-500 rounded-lg flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-black text-white tracking-tight">
-                  Workout Wizz
-                </span>
-              </div>
-              <p className="text-slate-400 leading-relaxed font-medium">
-                Your personal AI-powered fitness trainer, designed specifically
-                for students.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h4 className="text-white font-bold tracking-tight">Product</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <a
-                    href="#features"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#pricing"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#how-it-works"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    How It Works
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h4 className="text-white font-bold tracking-tight">Legal</h4>
-              <ul className="space-y-2 text-slate-400">
-                <li>
-                  <a
-                    href="/privacy-policy"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/terms-of-use"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    Terms of Use
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:admin@workoutwizz.com"
-                    className="hover:text-white transition-colors font-medium"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-            <p className="font-medium">
-              &copy; 2025 Workout Wizz. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
-}
+};
+
+export default WorkoutWizardLanding;

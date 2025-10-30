@@ -1,6 +1,8 @@
 import type React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+// components
+import MainLayout from "@/components/MainLayout";
 
 export const metadata: Metadata = {
   title: "Workout Wizz - Your Personal AI Fitness Trainer",
@@ -23,7 +25,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-inter antialiased" suppressHydrationWarning>
-        {children}
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
