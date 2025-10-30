@@ -43,99 +43,102 @@ export default function PrivacyPolicy() {
           </h1>
 
           <p className="text-lg text-slate-600 font-medium">
-            <strong className="text-slate-900">Effective Date:</strong> April
-            24, 2025
+            <strong className="text-slate-900">Last Updated:</strong> 27 Oct
+            2025
+          </p>
+
+          <p className="text-lg text-slate-600 leading-relaxed font-medium">
+            <strong className="text-slate-900">Workout Wizz</strong> respects
+            your privacy. This policy explains how we handle your information
+            when you use our mobile app.
           </p>
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              1. Information We Do Not Collect
+              What We Collect
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              We do not require you to sign up or log in. We do not collect any
-              personally identifiable information such as your name, email
-              address, or phone number.
-            </p>
+            <ul className="space-y-3 text-lg text-slate-600 leading-relaxed font-medium list-disc list-inside">
+              <li>
+                <strong className="text-slate-900">Account info:</strong> name,
+                email, profile details
+              </li>
+              <li>
+                <strong className="text-slate-900">Camera access:</strong> used
+                only to analyse your exercise form in real time; videos are
+                usually processed on your device and not stored
+              </li>
+              <li>
+                <strong className="text-slate-900">Usage data:</strong> device
+                type, app activity, errors, analytics
+              </li>
+              <li>
+                <strong className="text-slate-900">Payment info:</strong> if you
+                subscribe to premium features
+              </li>
+            </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              2. Location Data
+              How We Use It
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              With your permission, the app may access your device's location to
-              show nearby support services and provide directions. Your location
-              is only used in real-time and is not stored or shared with any
-              third party.
-            </p>
+            <ul className="space-y-3 text-lg text-slate-600 leading-relaxed font-medium list-disc list-inside">
+              <li>To provide exercise tracking and real-time feedback</li>
+              <li>To improve and personalise your workouts</li>
+              <li>To process payments and subscriptions</li>
+              <li>To maintain and secure our services</li>
+            </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              3. Analytics
+              Sharing
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              We may use anonymous analytics tools to understand general usage
-              patterns (e.g., which services are frequently accessed), but this
-              data is not linked to any personal identity.
+              We <strong className="text-slate-900">do not sell</strong> your
+              data. We only share with:
             </p>
+            <ul className="space-y-3 text-lg text-slate-600 leading-relaxed font-medium list-disc list-inside">
+              <li>Service providers (hosting, payments, analytics)</li>
+              <li>Legal authorities, if required</li>
+              <li>
+                In anonymised/aggregated form for research and improvements
+              </li>
+            </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              4. Data Security
+              Your Choices
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              Since we do not collect personal data, the risk to your privacy is
-              minimal. Nonetheless, we implement basic technical measures to
-              secure app interactions.
-            </p>
+            <ul className="space-y-3 text-lg text-slate-600 leading-relaxed font-medium list-disc list-inside">
+              <li>
+                You can request access, correction, or deletion of your data
+              </li>
+              <li>
+                You can withdraw camera permissions anytime (but some features
+                won't work)
+              </li>
+              <li>
+                You can request that to remove your account and personal data be
+                removed via email:{" "}
+                <a
+                  href="mailto:support@workoutwizz.com"
+                  className="text-blue-600 hover:text-blue-700 underline font-semibold transition-colors"
+                >
+                  support@workoutwizz.com
+                </a>
+              </li>
+            </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              5. Third-Party Services
+              Security
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              The app may use third-party mapping services (e.g., Google Maps)
-              to provide directions. Your interaction with these services is
-              governed by their own privacy policies.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              6. Children's Privacy
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              This app is intended for a general audience and is accessible to
-              users of all ages, including minors, without registration.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              7. Changes to This Policy
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              We may update this Privacy Policy occasionally. Changes will be
-              posted in the app.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-              8. Contact Us
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-              If you have any questions or concerns about this policy, please
-              contact us at:{" "}
-              <a
-                href="mailto:admin@workoutwizz.com"
-                className="text-blue-600 hover:text-blue-700 underline font-semibold transition-colors"
-              >
-                admin@workoutwizz.com
-              </a>
+              We use industry-standard safeguards to protect your data, but no
+              system is 100% secure.
             </p>
           </section>
         </div>
