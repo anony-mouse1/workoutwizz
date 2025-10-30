@@ -2,6 +2,7 @@
 
 import { FC } from "react";
 import { Zap } from "lucide-react";
+import Link from "next/link";
 
 const Footer: FC = () => {
   return (
@@ -9,14 +10,14 @@ const Footer: FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-green-500 rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-black text-white tracking-tight">
                 Workout Wizz
               </span>
-            </div>
+            </Link>
             <p className="text-slate-400 leading-relaxed font-medium">
               Your personal AI-powered fitness trainer, designed specifically
               for students.
@@ -55,20 +56,20 @@ const Footer: FC = () => {
             <h4 className="text-white font-bold tracking-tight">Legal</h4>
             <ul className="space-y-2 text-slate-400">
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="hover:text-white transition-colors font-medium"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/terms-of-use"
                   className="hover:text-white transition-colors font-medium"
                 >
                   Terms of Use
-                </a>
+                </Link>
               </li>
               <li>
                 <a
